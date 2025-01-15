@@ -1,0 +1,232 @@
+/* Mobile First Approach (base styles) */
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.main {
+    margin-left: 0;
+    width: 100%;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.navigation {
+    width: 70px;
+    z-index: 1000;
+}
+
+.navigation .logo .title,
+.navigation ul li a .title {
+    display: none;
+}
+
+.navigation ul li a {
+    padding: 0.5rem;
+    justify-content: center;
+}
+
+.navigation ul li a .icon {
+    margin-right: 0;
+}
+
+.home-content {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.text-content h1 {
+    font-size: 1.75rem;
+}
+
+.stats {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.search {
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Mobile First Approach (base styles) */
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background: var(--white);
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle {
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .topbar {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .toggle {
+        margin-right: 0.5rem;
+    }
+
+    .search {
+        max-width: calc(100% - 60px);
+    }
+}
+
+.games-grid,
+.programs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+/* Tablet (768px and up) */
+@media screen and (min-width: 768px) {
+    .main {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+        padding: 1.5rem;
+    }
+
+    .navigation.active {
+        width: 250px;
+    }
+
+    .navigation.active .logo .title,
+    .navigation.active ul li a .title {
+        display: block;
+    }
+
+    .home-content {
+        padding: 1.5rem;
+    }
+
+    .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .games-grid,
+    .programs-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .search {
+        width: 300px;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media screen and (min-width: 1024px) {
+    .main {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+        padding: 2rem;
+    }
+
+    .navigation {
+        width: 250px;
+    }
+
+    .navigation .logo .title,
+    .navigation ul li a .title {
+        display: block;
+    }
+
+    .navigation ul li a {
+        padding: 0.75rem 1rem;
+        justify-content: flex-start;
+    }
+
+    .navigation ul li a .icon {
+        margin-right: 1rem;
+    }
+
+    .home-content {
+        flex-direction: row;
+        padding: 2rem;
+        align-items: center;
+    }
+
+    .text-content {
+        text-align: left;
+    }
+
+    .text-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .carousel-container {
+        max-width: 50%;
+    }
+
+    .games-grid,
+    .programs-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+}
+
+/* Large Desktop (1440px and up) */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    .carousel-container {
+        max-width: 600px;
+    }
+}
+
+/* Fix for iOS Safari 100vh issue */
+@supports (-webkit-touch-callout: none) {
+    .container {
+        min-height: -webkit-fill-available;
+    }
+}
+
+/* Print styles */
+@media print {
+
+    .navigation,
+    .topbar,
+    .carousel-container {
+        display: none;
+    }
+
+    .main {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .text-content {
+        width: 100%;
+    }
+}

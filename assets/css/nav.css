@@ -1,0 +1,102 @@
+/* Navigation Styles */
+.navigation {
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+    background: var(--white);
+    border-right: 1px solid var(--gray-200);
+    transition: width 0.3s ease;
+    padding: 1.5rem 1rem;
+    overflow-x: hidden;
+}
+
+.navigation.active {
+    width: 90px;
+}
+
+.navigation .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--gray-200);
+    margin-bottom: 2rem;
+    white-space: nowrap;
+}
+
+.navigation .logo img {
+    min-width: 2.5rem;
+    height: 2.5rem;
+}
+
+.navigation .logo .title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    transition: opacity 0.2s ease;
+}
+
+.navigation.active .logo .title {
+    opacity: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem 0.5rem;
+    text-decoration: none;
+    color: var(--gray-700);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.navigation ul li a:hover,
+.navigation ul li a.active {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.navigation ul li a .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.navigation ul li a .icon img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+.navigation ul li a:hover .icon img,
+.navigation ul li a.active .icon img {
+    filter: brightness(0) saturate(100%) invert(1);
+}
+
+.navigation ul li a .title {
+    transition: opacity 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.navigation.active ul li a .title {
+    opacity: 0;
+}

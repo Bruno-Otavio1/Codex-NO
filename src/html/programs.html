@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codex-NO | Programs</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/nav.css">
+    <link rel="stylesheet" href="../../assets/css/topbar.css">
+    <link rel="stylesheet" href="../../assets/css/programs.css">
+    <link rel="stylesheet" href="../../assets/css/config.css">
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+    <link rel="shortcut icon" href="../../logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <div class="logo">
+                <img src="../../logo.png" alt="Logo">
+                <span class="title">Codex-NO</span>
+            </div>
+            <ul>
+                <li><a href="../../index.html">
+                        <span class="icon"><img src="../../assets/img/icons/icons-barra-de-nav/home.png" alt=""></span>
+                        <span class="title">Home</span>
+                    </a></li>
+                <li><a href="./games.html">
+                        <span class="icon"><img src="../../assets/img/icons/icons-barra-de-nav/game.png" alt=""></span>
+                        <span class="title">Games</span>
+                    </a></li>
+                <li><a href="./programs.html" class="active">
+                        <span class="icon"><img src="../../assets/img/icons/icons-barra-de-nav/programs.png"
+                                alt=""></span>
+                        <span class="title">programas</span>
+                    </a></li>
+                <li><a href="./iaNO.html">
+                        <span class="icon"><img src="../../assets/img/icons/icons-barra-de-nav/ia.png" alt=""></span>
+                        <span class="title">AI</span>
+                    </a></li>
+                <li><a href="./config.html">
+                        <span class="icon"><img src="../../assets/img/icons/icons-barra-de-nav/configuracao.png"
+                                alt=""></span>
+                        <span class="title">configuração</span>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <img src="../../assets/img/icons/menu-aberto.png" alt="Menu">
+                </div>
+
+            </div>
+
+            <div class="programs-content">
+                <div class="programs-header">
+                    <div class="header-text">
+                        <h1>Programs</h1>
+                        <p>Explore nossa coleção de programas</p>
+                    </div>
+                    <div class="programs-filters">
+                        <div class="category-filter">
+                            <select id="categorySelect">
+                                <option value="all">Todas Categorias</option>
+                                <option value="utilities">Utilitários</option>
+                                <option value="productivity">Produtividade</option>
+                                <option value="development">Desenvolvimento</option>
+                                <option value="security">Segurança</option>
+                                <option value="multimedia">Multimídia</option>
+                            </select>
+                        </div>
+                        <div class="sort-filter">
+                            <select id="sortSelect">
+                                <option value="newest">Mais Recentes</option>
+                                <option value="popular">Mais Populares</option>
+                                <option value="name">Nome A-Z</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="programs-grid">
+                    <!-- Program cards will be inserted here via JavaScript -->
+                </div>
+
+                <div class="programs-pagination">
+                    <button class="prev-page" disabled>Anterior</button>
+                    <div class="page-numbers">
+                        <span class="current">1</span> de <span class="total">1</span>
+                    </div>
+                    <button class="next-page">Próxima</button>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-section about">
+                        <img src="../../logo.png" alt="Codex-NO Logo">
+                        <p>Sua plataforma onde você pode encontrar tudo que precisa para estudar criação de jogos e
+                            programas.</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Links Rápidos</h3>
+                        <ul>
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="./games.html">Games</a></li>
+                            <li><a href="./programs.html">Programas</a></li>
+                            <li><a href="./iaNO.html">AI</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="#">Tutoriais</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Codex-NO. Todos os direitos reservados.</p>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+
+    <script src="../../assets/js/programs.js"></script>
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codex-NO | Games</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/nav.css">
+    <link rel="stylesheet" href="../../assets/css/topbar.css">
+    <link rel="stylesheet" href="../../assets/css/home.css">
+    <link rel="stylesheet" href="../../assets/css/games.css">
+    <link rel="stylesheet" href="../../assets/css/config.css">
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+    <link rel="shortcut icon" href="../../logo.png" type="image/x-icon">
+
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <div class="logo">
+                <img src="../../logo.png" alt="Logo">
+                <span class="title">Codex-NO</span>
+            </div>
+            <ul>
+                <li>
+                    <a href="../../index.html">
+                        <span class="icon"><img src="../../assets/img/icons/icons-barra-de-nav/home.png" alt=""></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./games.html" class="active">
+                        <span class="icon"><img src="../../assets/img/icons/icons-barra-de-nav/game.png" alt=""></span>
+                        <span class="title">Games</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./programs.html">
+                        <span class="icon"><img src="../../assets/img/icons/icons-barra-de-nav/programs.png"
+                                alt=""></span>
+                        <span class="title">programas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./iaNO.html">
+                        <span class="icon"><img src="../../assets/img/icons/icons-barra-de-nav/ia.png" alt=""></span>
+                        <span class="title">AI</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./config.html">
+                        <span class="icon"><img src="../../assets/img/icons/icons-barra-de-nav/configuracao.png"
+                                alt=""></span>
+                        <span class="title">configuração</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <img src="../../assets/img/icons/menu-aberto.png" alt="Menu">
+                </div>
+
+            </div>
+
+            <!-- Adicionar dentro da div main, após a topbar -->
+            <div class="games-content">
+                <div class="games-header">
+                    <div class="header-text">
+                        <h1>Games</h1>
+                        <p>Explore nossa coleção de jogos</p>
+                    </div>
+                    <div class="games-filters">
+                        <div class="category-filter">
+                            <select id="categorySelect">
+                                <option value="all">Todas Categorias</option>
+                                <option value="ação">Ação</option>
+                                <option value="aventura">Aventura</option>
+                                <option value="rpg">RPG</option>
+                                <option value="estratégia">Estratégia</option>
+                                <option value="esportes">Esportes</option>
+                                <option value="quebraCabeca">Quebra-cabeça</option>
+                                <option value="arcade">Arcade</option>
+                            </select>
+                        </div>
+                        <div class="sort-filter">
+                            <select id="sortSelect">
+                                <option value="newest">Mais Recentes</option>
+                                <option value="popular">Mais Populares</option>
+                                <option value="name">Nome A-Z</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="games-grid">
+                    <!-- Game cards serão inseridos aqui via JavaScript -->
+                </div>
+
+                <div class="games-pagination">
+                    <button class="prev-page" disabled>Anterior</button>
+                    <div class="page-numbers">
+                        <span class="current">1</span> de <span class="total">1</span>
+                    </div>
+                    <button class="next-page">Próxima</button>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-section about">
+                        <img src="../../logo.png" alt="Codex-NO Logo">
+                        <p>Sua plataforma onde você pode encontrar tudo que precisa para estudar criação de jogos e
+                            programas.</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Links Rápidos</h3>
+                        <ul>
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="./games.html">Games</a></li>
+                            <li><a href="./programs.html">Programas</a></li>
+                            <li><a href="./iaNO.html">AI</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="#">Tutoriais</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Codex-NO. Todos os direitos reservados.</p>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- ===== js ===== -->
+    <script src="../../assets/js/games.js"></script>
+    <script src="../../assets/js/config.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>
